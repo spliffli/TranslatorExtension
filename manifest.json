@@ -2,6 +2,9 @@
     "manifest_version": 2,
     "name": "Translator Extension",
     "version": "0.1",
+    "background": {
+        "scripts": ["background.js"]
+    },
     "content_scripts": [
       {
         "matches": [
@@ -12,8 +15,5 @@
     ],
     "browser_action": {
         "default_icon": "icon.png"
-      },
-    "background": {
-        "scripts": ["background.js"]
-    }
+      }
   }
